@@ -1,7 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-        startServerCommand: 'npx hlx up',
+        startServerCommand: 'npx @adobe/helix-cli up',
         url: ['http://localhost:3000']
     },
     upload: {
