@@ -10,6 +10,6 @@ jobs:
       with:
         node-version: '18.12.0'
     - run: npm install
-    - run: npx @adobe/helix-cli up --log-level silly --no-livereload --pages-url https://main--helix-project-boilerplate--adobe.hlx.page
+    - run: npx @adobe/helix-cli up --log-level silly --pages-url https://main--helix-project-boilerplate--adobe.hlx.page
       env:
         CI: true
