@@ -1,0 +1,26 @@
+{
+  "ci": {
+    "collect": {
+      "method": "psi",
+      "psiApiKey": "#{PSI_API_KEY}#"
+    },
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "render-blocking-resources": ["warn", { "numericValue": 0 }],
+        "uses-rel-preconnect": ["warn", { "numericValue": 0 }],
+        "csp-xss": ["warn", { "minScore": 0 }],
+        "html-has-lang": "off",
+        "installable-manifest": "off",
+        "is-crawlable": "off",
+        "link-name": "off",
+        "service-worker": "off",
+        "splash-screen": "off",
+        "themed-omnibox": "off",
+        "unminified-javascript": "off",
+        "maskable-icon": "off",
+        "apple-touch-icon": "off"
+      }
+    }
+  }
+}
